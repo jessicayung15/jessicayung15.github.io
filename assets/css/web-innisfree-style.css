@@ -56,13 +56,13 @@ header {
 }
 
 #menu a {
-    font: futura;
+    font-family: Futura, serif;
     color: black;
     text-decoration: none;
 }
 
 #menu a:hover {
-    font: futura;
+    font-family: Futura, serif;
     color: #f2b8bb;
     text-decoration: none;
 }
@@ -82,6 +82,12 @@ section {
     height: 100vh;
 }
 
+.spacer-300{
+    width: 100%;
+    height: 300px;
+    background: #f2b8bb;
+}
+
 #home {
 }
 
@@ -97,7 +103,7 @@ section {
 #pohon-kiri {
     position: absolute;
     left: 0;
-    bottom: 0;
+    top: 60px;
     height: 670px;
     animation-name: pohon-kiri;
     animation-duration: 1s;
@@ -106,7 +112,7 @@ section {
 #pohon-kanan {
     position: absolute;
     right: 0;
-    bottom: 0;
+    top: 60px;
     height: 670px;
     animation-name: pohon-kanan;
     animation-duration: 1s;
@@ -146,7 +152,7 @@ section {
     border-radius: 30px;
     padding: 15px;
     padding-left: 10px;
-    font-family: Futura Md BT;
+    font-family: Futura Md BT, serif;
     color: white;
 
 }
@@ -160,7 +166,7 @@ section {
 #home-ingredients-gap{
     font-size: 35px;
     color: #f3858f;
-    font-family: "Futura Md BT";
+    font-family: "Futura Md BT", serif;
     padding: 20px;
     margin: 20px;
     display: flex;
@@ -199,17 +205,17 @@ section {
 
 #ingredients {
     background: #f2b8bb;
-    padding-top: 120px;
-    height: 100vh;
+}
+
+#ingredients-image-background {
+    position: absolute;
+    width: 100%;
 }
 
 #ingredients-wrapper {
-    height: 150%;
-    position: relative;
-    background: url(../images/pohon-bunga.png);
-    background-size: cover;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
 #ingredients-background {
@@ -219,7 +225,6 @@ section {
     height: 1470px;
     width: 1440px;
 }
-
 
 #pohon-bunga {
     position: absolute;
@@ -237,26 +242,32 @@ section {
 }
 
 #ingredients-content-wrapper {
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 5;
 }
 
 #ingredients-content-title-wrapper {
+    align-self: flex-start;
+    padding: 30px;
     position: relative;
-    left: 250px;
 }
 
 #ingredents-content-title {
     font-size: 70px;
     text-align: right;
     color: white;
-    font-family: Newton W01 Extra Bold;
+    font-family: Newton W01 Extra Bold, serif;
     margin: 0;
 }
 
 #ingredients-slider {
-    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 40%;
     height: 350px;
     padding: 20px;
@@ -271,17 +282,24 @@ section {
 
 #ingredients-slider-indicator-wrapper{
     display: flex;
-    width: inherit;
     justify-content: center;
     margin-top: 10px;
 }
 
 .ingredients-slider-indicator{
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     background: white;
-    border: 3px solid #f3858f;
+    border: 2px solid #f3858f;
     border-radius: 10px;
+}
+
+.ingredients-slider-indicator:not(:last-child) {
+    margin-right: 7px;
+}
+
+.ingredients-slider-indicator.active{
+    background: #f3858f;
 }
 
 .slider-item {
@@ -290,6 +308,12 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+
+.slider-item.active {
+    opacity: 1;
 }
 
 #video-ingredients {
