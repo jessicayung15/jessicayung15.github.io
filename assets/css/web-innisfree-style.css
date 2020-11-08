@@ -103,8 +103,8 @@ section {
 #pohon-kiri {
     position: absolute;
     left: 0;
-    top: 60px;
-    height: 670px;
+    top: 0;
+    height: 100%;
     animation-name: pohon-kiri;
     animation-duration: 1s;
 }
@@ -112,8 +112,8 @@ section {
 #pohon-kanan {
     position: absolute;
     right: 0;
-    top: 60px;
-    height: 670px;
+    top: 0;
+    height: 100%;
     animation-name: pohon-kanan;
     animation-duration: 1s;
 }
