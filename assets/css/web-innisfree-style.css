@@ -44,7 +44,7 @@ header {
     display: flex;
     list-style-type: none;
     padding-left: 0;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 #menu li {
@@ -52,7 +52,7 @@ header {
 }
 
 #menu li:first-child {
-    padding left:: 0;
+    padding-left: 0;
 }
 
 #menu a {
@@ -114,7 +114,7 @@ section {
 
 #produk-dan-tangan {
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     width: 850px;
     left: 50%;
     margin-left: -425px;
@@ -157,6 +157,16 @@ section {
     font-size: 15px;
 }
 
+#home-ingredients-gap{
+    font-size: 35px;
+    color: #f3858f;
+    font-family: "Futura Md BT";
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
 @keyframes pohon-kiri {
     from {
         left: -100%
@@ -189,12 +199,12 @@ section {
 
 #ingredients {
     background: #f2b8bb;
-    padding-top: 300px;
+    padding-top: 120px;
     height: 100vh;
 }
 
 #ingredients-wrapper {
-    height: 100%;
+    height: 150%;
     position: relative;
     background: url(../images/pohon-bunga.png);
     background-size: cover;
@@ -204,7 +214,7 @@ section {
 
 #ingredients-background {
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 710px;
     height: 1470px;
     width: 1440px;
@@ -213,7 +223,7 @@ section {
 
 #pohon-bunga {
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 742px;
     height: 1003px;
     width: 1440px;
@@ -227,13 +237,14 @@ section {
 }
 
 #ingredients-content-wrapper {
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
 }
 
 #ingredients-content-title-wrapper {
     position: relative;
+    left: 250px;
 }
 
 #ingredents-content-title {
@@ -245,14 +256,13 @@ section {
 }
 
 #ingredients-slider {
-    margin-left: 30px;
-    width: 100%;
-    height: 300px;
+    margin-left: 200px;
+    width: 40%;
+    height: 350px;
     padding: 20px;
     background: white;
     border-radius: 23px;
 }
-
 #ingredients-slider-item-wrapper{
     position: relative;
     width: 100%;
@@ -270,7 +280,7 @@ section {
     width: 20px;
     height: 20px;
     background: white;
-    border: 3px solid green;
+    border: 3px solid #f3858f;
     border-radius: 10px;
 }
 
@@ -288,29 +298,74 @@ section {
     object-fit: cover;
 }
 
-
+#Product-details{
+    background-color: #f2b8bb;
+    height: 440px;
+}
+#Product-details-wrapper{
+    height: 100%;
+    position: relative;
+}
 #product-dan-bunga {
     position: absolute;
-    right: 0;
-    top: 1430px;
+    right: 20px;
+    top: 100px;
     bottom: 0;
-    height: 750px;
+    height: 650px;
+}
+#product-details-slider{
+    top: 20px;
+    margin-left: 200px;
+    width: 40%;
+    height: 350px;
+    padding: 20px;
+    background: yellow;
+    border-radius: 23px;
 }
 
+#Product-details-slider-item-wrapper{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 30px);
+}
+#icon-details1{
+    width: 10%;
+
+}
 #product-details-content-title {
     position: absolute;
-    top: 1680px;
-    font-size: 75px;
-    text-align: left;
+    top: 320px;
+    font-size: 80px;
+    text-align: right;
     color: white;
     font-family: Newton W01 Extra Bold;
-    margin top: 10px;
-    margin-left: 200px;
+    margin-top: 10px;
+    margin-left: 240px;
+}
+#product-details-content-description {
+    position: absolute;
+    font-size: 15px;
+    width: 20%;
+    top: 450px;
+    left: 490px;
+}
+#product-details-slider-indicator-wrapper{
+    display: flex;
+    width: inherit;
+    justify-content: center;
+    margin-top: 10px;
 }
 
+.product-details-slider-indicator {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 3px solid #f3858f;
+    border-radius: 10px;
+}
 #box-how-to-use {
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 2384px;
     height: 493px;
     width: 900px;
@@ -321,7 +376,7 @@ section {
 
 #bunga-depan-kiri {
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 2182px;
     height: 400px;
     width: 580px;
@@ -329,7 +384,7 @@ section {
 
 #bunga-depan-kanan {
     position: absolute;
-    right: 0px;
+    right: 0;
     top: 2582px;
     height: 400px;
     width: 600px;
@@ -337,7 +392,7 @@ section {
 
 #tutorial-how-to-use-1 {
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 2440px;
     height: 260px;
     width: 260px;
@@ -347,7 +402,7 @@ section {
 
 #arrow-kiri-how-to-use {
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 2550px;
     height: 50px;
     width: 50px;
@@ -437,7 +492,7 @@ how-to-use-content-wrapper {
     text-align: left;
     color: black;
     font-family: Newton W01 Extra Bold;
-    margin top: 10px;
+    margin-top: 10px;
     margin-left: 730px;
 }
 
@@ -829,7 +884,7 @@ how-to-use-content-wrapper {
     top: -430px;
     height: 100px;
     width: 57%;
-    left: 0%;
+    left: 0;
     margin-left: 310px;
     font-size: 22px;
     font-family: Futura bk BT;
@@ -1062,7 +1117,7 @@ how-to-use-content-wrapper {
     font-size: 16px;
     color: white;
     font-family: Futura Md BT;
-    margin: px;
+    margin: 0px;
     width: 500px;
     left: 0;
     margin-left: 882px;
