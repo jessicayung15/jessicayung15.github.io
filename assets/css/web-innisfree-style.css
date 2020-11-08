@@ -52,7 +52,7 @@ header {
 }
 
 #menu li:first-child {
-    padding left: :0;
+    padding left:: 0;
 }
 
 #menu a {
@@ -82,7 +82,8 @@ section {
     height: 100vh;
 }
 
-#home {}
+#home {
+}
 
 #home-wrapper {
     height: 100%;
@@ -186,16 +187,16 @@ section {
     }
 }
 
-ingredients {
-    background: rgb(243, 133, 143);
-    background: linear-gradient(0deg, rgba(243, 133, 143, 1) 3%, rgba(242, 184, 187, 1) 48%);
-    height: 100%;
+#ingredients {
+    background: #f2b8bb;
+    padding-top: 300px;
+    height: 100vh;
 }
 
-ingredients-wrapper {
+#ingredients-wrapper {
     height: 100%;
     position: relative;
-    background: url(ingredients-story/IMG/pohon-bunga.png);
+    background: url(../images/pohon-bunga.png);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -219,27 +220,20 @@ ingredients-wrapper {
 }
 
 #kelopak-bunga {
+    width: 400px;
     position: absolute;
-    bottom: -560px;
-    width: 460px;
-    left: 5%;
-    margin-left: 60px;
-}
-
-video ingredients {
-    position: absolute;
-    bottom: -560px;
-    width: 460px;
-    left: 5%;
-    margin-left: 60px;
+    bottom: -200px;
+    left: -130px;
 }
 
 #ingredients-content-wrapper {
-    width: 30%;
-    margin-top: 160px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+#ingredients-content-title-wrapper {
     position: relative;
-    text-align: right;
-    margin-left: 200px;
 }
 
 #ingredents-content-title {
@@ -247,16 +241,51 @@ video ingredients {
     text-align: right;
     color: white;
     font-family: Newton W01 Extra Bold;
-    margin top: 10px;
-    margin-left: 10px;
+    margin: 0;
+}
+
+#ingredients-slider {
+    margin-left: 30px;
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    background: white;
+    border-radius: 23px;
+}
+
+#ingredients-slider-item-wrapper{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 30px);
+}
+
+#ingredients-slider-indicator-wrapper{
+    display: flex;
+    width: inherit;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.ingredients-slider-indicator{
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 3px solid green;
+    border-radius: 10px;
+}
+
+.slider-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 #video-ingredients {
-    position: absolute;
-    right: 0;
-    top: 1430px;
-    bottom: 0;
-    height: 750px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
