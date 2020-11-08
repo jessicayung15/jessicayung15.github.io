@@ -1,0 +1,1041 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: futura;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: white;
+    -webkit-box-shadow: 2px 6px 15px -3px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 6px 15px -3px rgba(0, 0, 0, 0.25);
+}
+
+#header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+
+}
+
+#link-logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -85px;
+    margin-top: -15px;
+}
+
+.logo {
+    width: 170px;
+    height: 34px;
+    object-fit: contain;
+}
+
+#menu {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0px;
+}
+
+#menu li {
+    padding: 10px 40px;
+}
+
+#menu li:first-child {
+    padding left: :0;
+}
+
+#menu a {
+    font: futura;
+    color: black;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    font: futura;
+    color: #f2b8bb;
+    text-decoration: none;
+}
+
+#btn-try {
+    background-color: #f3858f;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-top: -10px;
+    border: 0;
+    font-weight: bold;
+    color: white;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+#home {}
+
+#home-wrapper {
+    height: 100%;
+    position: relative;
+    background: url(../images/background-2.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+#pohon-kiri {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 670px;
+    animation-name: pohon-kiri;
+    animation-duration: 1s;
+}
+
+#pohon-kanan {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 670px;
+    animation-name: pohon-kanan;
+    animation-duration: 1s;
+}
+
+#produk-dan-tangan {
+    position: absolute;
+    bottom: 0px;
+    width: 850px;
+    left: 50%;
+    margin-left: -425px;
+    animation-name: produk-dan-tangan;
+    animation-duration: 1s;
+}
+
+#home-content-wrapper {
+    width: 50%;
+    margin-top: 100px;
+    position: relative;
+    z-index: 5;
+    text-align: center;
+}
+
+#home-content-title {
+    font-size: 80px;
+    color: white;
+    font-family: Newton W01 Extra Bold;
+    margin: 20px;
+}
+
+#home-content-detail {
+    font-size: 30px;
+    background-color: #f2b8bb;
+    margin: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 30px;
+    padding: 15px;
+    padding-left: 10px;
+    font-family: Futura Md BT;
+    color: white;
+
+}
+
+#home-content-description {
+    width: 80%;
+    margin: 20px auto;
+    font-size: 15px;
+}
+
+@keyframes pohon-kiri {
+    from {
+        left: -100%
+    }
+
+    to {
+        left: 0
+    }
+}
+
+@keyframes pohon-kanan {
+    from {
+        right: -100%
+    }
+
+    to {
+        right: 0
+    }
+}
+
+@keyframes produk-dan-tangan {
+    from {
+        bottom: -100%
+    }
+
+    to {
+        bottom: 0
+    }
+}
+
+ingredients {
+    background: rgb(243, 133, 143);
+    background: linear-gradient(0deg, rgba(243, 133, 143, 1) 3%, rgba(242, 184, 187, 1) 48%);
+    height: 100%;
+}
+
+ingredients-wrapper {
+    height: 100%;
+    position: relative;
+    background: url(ingredients-story/IMG/pohon-bunga.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+#ingredients-background {
+    position: absolute;
+    left: 0px;
+    top: 710px;
+    height: 1470px;
+    width: 1440px;
+}
+
+
+#pohon-bunga {
+    position: absolute;
+    left: 0px;
+    top: 742px;
+    height: 1003px;
+    width: 1440px;
+}
+
+#kelopak-bunga {
+    position: absolute;
+    bottom: -560px;
+    width: 460px;
+    left: 5%;
+    margin-left: 60px;
+}
+
+video ingredients {
+    position: absolute;
+    bottom: -560px;
+    width: 460px;
+    left: 5%;
+    margin-left: 60px;
+}
+
+#ingredients-content-wrapper {
+    width: 30%;
+    margin-top: 160px;
+    position: relative;
+    text-align: right;
+    margin-left: 200px;
+}
+
+#ingredents-content-title {
+    font-size: 70px;
+    text-align: right;
+    color: white;
+    font-family: Newton W01 Extra Bold;
+    margin top: 10px;
+    margin-left: 10px;
+}
+
+#video-ingredients {
+    position: absolute;
+    right: 0;
+    top: 1430px;
+    bottom: 0;
+    height: 750px;
+}
+
+
+#product-dan-bunga {
+    position: absolute;
+    right: 0;
+    top: 1430px;
+    bottom: 0;
+    height: 750px;
+}
+
+#product-details-content-title {
+    position: absolute;
+    top: 1680px;
+    font-size: 75px;
+    text-align: left;
+    color: white;
+    font-family: Newton W01 Extra Bold;
+    margin top: 10px;
+    margin-left: 200px;
+}
+
+#box-how-to-use {
+    position: absolute;
+    left: 0px;
+    top: 2384px;
+    height: 493px;
+    width: 900px;
+    left: 50%;
+    margin-left: -450px;
+
+}
+
+#bunga-depan-kiri {
+    position: absolute;
+    left: 0px;
+    top: 2182px;
+    height: 400px;
+    width: 580px;
+}
+
+#bunga-depan-kanan {
+    position: absolute;
+    right: 0px;
+    top: 2582px;
+    height: 400px;
+    width: 600px;
+}
+
+#tutorial-how-to-use-1 {
+    position: absolute;
+    left: 0px;
+    top: 2440px;
+    height: 260px;
+    width: 260px;
+    left: 50%;
+    margin-left: -130px;
+}
+
+#arrow-kiri-how-to-use {
+    position: absolute;
+    left: 0px;
+    top: 2550px;
+    height: 50px;
+    width: 50px;
+    left: 50%;
+    margin-left: -225px;
+
+}
+
+#arrow-kanan-how-to-use {
+    position: absolute;
+    left: 0px;
+    top: 2550px;
+    height: 50px;
+    width: 50px;
+    left: 70%;
+    margin-left: -115px;
+}
+
+how-to-use-content-wrapper {
+    width: 50%;
+    margin-top: 20px;
+    position: relative;
+    z-index: 100;
+    text-align: center;
+}
+
+#how-to-use-content-title {
+    font-size: 60px;
+    color: black;
+    font-family: Newton W01 Extra Bold;
+    margin: 10px;
+    text-align: center;
+    margin-top: -100px;
+}
+
+#how-to-use-detail {
+    position: absolute;
+    top: 2800px;
+    font-size: 25px;
+    color: white;
+    font-family: Futura Md BT;
+    letter-spacing: 1px;
+    margin: 10px;
+    text-align: center;
+    margin-top: -100px;
+    width: 100%;
+    margin-left: 0;
+}
+
+
+#how-to-use-content-description {
+    position: absolute;
+    top: 2850px;
+    font-size: 17px;
+    color: black;
+    font-family: Futura bk BT;
+    letter-spacing: 1px;
+    margin: 10px;
+    text-align: center;
+    margin-top: -100px;
+    width: 470px;
+    left: 50%;
+    margin-left: -235px;
+}
+
+#background-texture {
+    position: absolute;
+    left: 0px;
+    top: 3400px;
+    height: 730px;
+    width: 1440px;
+}
+
+#texture-jpg {
+    position: absolute;
+    left: 0px;
+    top: 3120px;
+    height: 620px;
+    width: 680px;
+    margin-left: 100px;
+}
+
+#texture-title {
+    position: absolute;
+    top: 3250px;
+    font-size: 70px;
+    text-align: left;
+    color: black;
+    font-family: Newton W01 Extra Bold;
+    margin top: 10px;
+    margin-left: 730px;
+}
+
+#texture-description {
+    width: 38%;
+    margin: 20px;
+    font-size: 23px;
+    position: absolute;
+    top: 3400px;
+    margin-left: 730px;
+}
+
+#awards-content-wrapper {
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+#awards-line {
+    position: absolute;
+    left: 0px;
+    top: 4030px;
+    height: 3px;
+    width: 325px;
+    left: 50%;
+    margin-left: -164px;
+}
+
+#shining-kiri {
+    position: absolute;
+    left: 0px;
+    top: 3990px;
+    height: 85px;
+    width: 95px;
+    left: 50%;
+    margin-left: -275px;
+}
+
+#shining-kanan {
+    position: absolute;
+    left: 0px;
+    top: 3910px;
+    height: 80px;
+    width: 75px;
+    left: 70%;
+    margin-left: -125px;
+}
+
+#awards-content-title {
+    position: absolute;
+    top: -480px;
+    font-size: 100px;
+    color: white;
+    font-family: Newton W01 Extra Bold;
+    margin: 20px;
+}
+
+#awards-content-details {
+    position: absolute;
+    top: -355px;
+    font-size: 20px;
+    color: white;
+    font-family: Futura Bk BT;
+    margin: 20px;
+}
+
+#icon-awards-wrapper {
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+#icon-awards1 {
+    position: absolute;
+    left: 0px;
+    top: -195px;
+    height: 110px;
+    width: 110px;
+    left: 0%;
+    margin-left: 170px;
+}
+
+#icon-awards2 {
+    position: absolute;
+    left: 0px;
+    top: -195px;
+    height: 110px;
+    width: 110px;
+    left: 0%;
+    margin-left: 420px;
+}
+
+#icon-awards3 {
+    position: absolute;
+    left: 0px;
+    top: -195px;
+    height: 110px;
+    width: 110px;
+    left: 0%;
+    margin-left: 670px;
+}
+
+#icon-awards4 {
+    position: absolute;
+    left: 0px;
+    top: -195px;
+    height: 110px;
+    width: 110px;
+    left: 0%;
+    margin-left: 920px;
+}
+
+#icon-awards5 {
+    position: absolute;
+    left: 0px;
+    top: -195px;
+    height: 110px;
+    width: 110px;
+    left: 0%;
+    margin-left: 1170px;
+}
+
+#awards-content-description-title1 {
+    position: absolute;
+    left: 0px;
+    top: 4305px;
+    height: 100px;
+    width: 100%;
+    left: 0%;
+    margin-left: 175px;
+    font-family: Futura Md BT;
+
+}
+
+#awards-content-description-title2 {
+    position: absolute;
+    left: 0px;
+    top: 4305px;
+    height: 100px;
+    width: 10%;
+    left: 0%;
+    margin-left: 403px;
+    text-align: center;
+    font-family: Futura Md BT;
+}
+
+#awards-content-description-title3 {
+    position: absolute;
+    left: 0px;
+    top: 4305px;
+    height: 100px;
+    width: 10%;
+    left: 0%;
+    margin-left: 653px;
+    text-align: center;
+    font-family: Futura Md BT;
+}
+
+#awards-content-description-title4 {
+    position: absolute;
+    left: 0px;
+    top: 4305px;
+    height: 100px;
+    width: 10%;
+    left: 0%;
+    margin-left: 905px;
+    text-align: center;
+    font-family: Futura Md BT;
+}
+
+#awards-content-description-title5 {
+    position: absolute;
+    left: 0px;
+    top: 4305px;
+    height: 100px;
+    width: 10%;
+    left: 0%;
+    margin-left: 1155px;
+    text-align: center;
+    font-family: Futura Md BT;
+}
+
+#awards-content-description1 {
+    position: absolute;
+    left: 0px;
+    top: 4355px;
+    height: 100px;
+    width: 10%;
+    left: 0%;
+    margin-left: 153px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Futura bk BT;
+}
+
+#awards-content-description2 {
+    position: absolute;
+    left: 0px;
+    top: 4395px;
+    height: 100px;
+    width: 10%;
+    left: 0%;
+    margin-left: 403px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Futura bk BT;
+}
+
+#awards-content-description3 {
+    position: absolute;
+    left: 0px;
+    top: 4355px;
+    height: 100px;
+    width: 10%;
+    left: 0%;
+    margin-left: 653px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Futura bk BT;
+}
+
+#awards-content-description4 {
+    position: absolute;
+    left: 0px;
+    top: 4375px;
+    height: 100px;
+    width: 10%;
+    left: 0%;
+    margin-left: 905px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Futura bk BT;
+}
+
+#awards-content-description5 {
+    position: absolute;
+    left: 0px;
+    top: 4355px;
+    height: 100px;
+    width: 10%;
+    left: 0%;
+    margin-left: 1155px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Futura bk BT;
+}
+
+#review-background {
+    position: absolute;
+    left: 0px;
+    top: 5100px;
+    height: 760px;
+    width: 1320px;
+    left: 50%;
+    margin-left: -660px;
+}
+
+#reviews-title {
+    font-size: 80px;
+    color: #f3858f;
+    top: -530px;
+    font-family: Newton W01 Extra Bold;
+    margin: 20px;
+    text-align: center;
+    position: relative;
+}
+
+#review-box-background {
+    position: absolute;
+    left: 0px;
+    top: 4700px;
+    height: 760px;
+    width: 1100px;
+    left: 50%;
+    margin-left: -550px;
+}
+
+#review-arrow-kiri {
+    position: absolute;
+    left: 0px;
+    top: 5000px;
+    height: 50px;
+    width: 50px;
+    left: 50%;
+    margin-left: -640px;
+}
+
+#review-arrow-kanan {
+    position: absolute;
+    left: 0px;
+    top: 5000px;
+    height: 50px;
+    width: 50px;
+    left: 70%;
+    margin-left: 300px;
+}
+
+#review-line1 {
+    position: absolute;
+    left: 0px;
+    top: 5100px;
+    height: 2px;
+    width: 825px;
+    left: 50%;
+    margin-left: -412px;
+}
+
+#review-line2 {
+    position: absolute;
+    left: 0px;
+    top: 5340px;
+    height: 2px;
+    width: 825px;
+    left: 50%;
+    margin-left: -412px;
+}
+
+#foto-review1 {
+    position: absolute;
+    left: 0px;
+    top: 4750px;
+    height: 200px;
+    width: 200px;
+    left: 50%;
+    margin-left: -105px;
+}
+
+#leaf-review5 {
+    position: absolute;
+    left: 0px;
+    top: 5150px;
+    height: 40px;
+    width: 160px;
+    left: 50%;
+    margin-left: 250px;
+}
+
+#reviews-profile-name {
+    position: absolute;
+    left: 0px;
+    top: -270px;
+    height: 100px;
+    width: 50%;
+    left: 50%;
+    margin-left: -364px;
+    font-size: 25px;
+    font-family: Futura Md BT;
+    text-align: center;
+    position: relative;
+
+}
+
+#reviews-profile-description {
+    position: absolute;
+    left: 0px;
+    top: -350px;
+    height: 100px;
+    width: 50%;
+    left: 50%;
+    margin-left: -364px;
+    font-size: 18px;
+    font-family: Futura bk BT;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+}
+
+#reviews-content-date {
+    position: absolute;
+    left: 0px;
+    top: -355px;
+    height: 100px;
+    width: 50%;
+    left: 0%;
+    margin-left: 0px;
+    font-size: 17px;
+    font-family: Futura Md BT;
+    text-align: center;
+    position: relative;
+}
+
+#reviews-content-description {
+    position: absolute;
+    left: 0px;
+    top: -430px;
+    height: 100px;
+    width: 57%;
+    left: 0%;
+    margin-left: 310px;
+    font-size: 22px;
+    font-family: Futura bk BT;
+    text-align: left;
+    position: relative;
+}
+
+#reviews-recommendation {
+    position: absolute;
+    left: 0px;
+    top: -365px;
+    height: 100px;
+    width: 57%;
+    left: 0%;
+    margin-left: 310px;
+    font-size: 29px;
+    font-family: Futura bk BT;
+    text-align: center;
+    color: #f3858f;
+    position: relative;
+}
+
+#product-tryitnow {
+    position: absolute;
+    left: 0px;
+    top: 5550px;
+    height: 700px;
+    width: 700px;
+    left: 50%;
+    margin-left: -350px;
+}
+
+#bunga-tryitnow {
+    position: absolute;
+    left: 0px;
+    top: 5715px;
+    height: 450px;
+    width: 1200px;
+    left: 50%;
+    margin-left: -600px;
+}
+
+#tryitnow-content-title {
+    position: absolute;
+    top: 6150px;
+    font-size: 60px;
+    color: #f3858f;
+    font-family: Newton W01 Extra Bold;
+    margin: 20px;
+    width: 600px;
+    left: 50%;
+    margin-left: -300px;
+    text-align: center;
+}
+
+#tryitnow-content-detail {
+    position: absolute;
+    top: 6240px;
+    width: 80%;
+    margin: 20px auto;
+    font-size: 33px;
+    width: 600px;
+    left: 50%;
+    margin-left: -300px;
+    text-align: center;
+}
+
+#tryitnow-content-description {
+    position: absolute;
+    top: 6320px;
+    left: 50%;
+    font-size: 30px;
+    background-color: #bddeff;
+    margin: 10px;
+    margin-left: -185px;
+    margin-right: 40px;
+    border-radius: 30px;
+    padding: 15px;
+    padding-left: 10px;
+    font-family: Futura Md BT;
+    color: white;
+    width: 370px;
+    justify-content: center;
+    text-align: center;
+}
+
+#box-background-bunga {
+    position: absolute;
+    left: 0px;
+    top: 6500px;
+    height: 400px;
+    width: 1320px;
+    left: 50%;
+    margin-left: -660px;
+}
+
+#bunga-background-contact {
+    position: absolute;
+    left: 0px;
+    top: 6500px;
+    height: 350px;
+    width: 1320px;
+    left: 50%;
+    margin-left: -660px;
+}
+
+#box-background-contact {
+    position: absolute;
+    left: 0px;
+    top: 6830px;
+    height: 420px;
+    width: 1440px;
+}
+
+#logo-innisfree-contact {
+    position: absolute;
+    left: 0px;
+    top: 6620px;
+    height: 100px;
+    width: 550px;
+    left: 50%;
+    margin-left: -275px;
+}
+
+#contact-content-title {
+    position: absolute;
+    top: 6900px;
+    font-size: 35px;
+    color: white;
+    font-family: Futura Md BT;
+    margin: 20px;
+    width: 600px;
+    left: 50%;
+    margin-left: -300px;
+    text-align: center;
+}
+
+#contact-line {
+    position: absolute;
+    left: 0px;
+    top: 7140px;
+    height: 2px;
+    width: 1320px;
+    left: 50%;
+    margin-left: -660px;
+}
+
+#icon-facebook {
+    position: absolute;
+    left: 0px;
+    top: 7030px;
+    height: 45px;
+    width: 30px;
+    left: 50%;
+    margin-left: -225px;
+}
+
+#icon-instagram {
+    position: absolute;
+    left: 0px;
+    top: 7030px;
+    height: 45px;
+    width: 45px;
+    left: 50%;
+    margin-left: -133px;
+}
+
+#icon-youtube {
+    position: absolute;
+    left: 0px;
+    top: 7030px;
+    height: 45px;
+    width: 65px;
+    left: 50%;
+    margin-left: -28px;
+}
+
+#icon-line {
+    position: absolute;
+    left: 0px;
+    top: 7030px;
+    height: 45px;
+    width: 130px;
+    left: 50%;
+    margin-left: 103px;
+}
+
+#contact-content-details1 {
+    position: absolute;
+    top: 7150px;
+    font-size: 16px;
+    color: white;
+    font-family: Futura Md BT;
+    margin: 10px;
+    width: 500px;
+    left: 0;
+    margin-left: 60px;
+    text-align: left;
+}
+
+#contact-content-details2 {
+    position: absolute;
+    top: 7150px;
+    font-size: 16px;
+    color: white;
+    font-family: Futura Md BT;
+    margin: 10px;
+    width: 500px;
+    left: 0;
+    margin-left: 200px;
+    text-align: left;
+}
+
+#contact-content-details3 {
+    position: absolute;
+    top: 7150px;
+    font-size: 16px;
+    color: white;
+    font-family: Futura Md BT;
+    margin: 10px;
+    width: 500px;
+    left: 0;
+    margin-left: 340px;
+    text-align: left;
+}
+
+#contact-content-details4 {
+    position: absolute;
+    top: 7150px;
+    font-size: 16px;
+    color: white;
+    font-family: Futura Md BT;
+    margin: px;
+    width: 500px;
+    left: 0;
+    margin-left: 882px;
+    text-align: right;
+}
