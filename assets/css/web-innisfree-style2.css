@@ -1,0 +1,1338 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: futura;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: white;
+    -webkit-box-shadow: 2px 6px 15px -3px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 6px 15px -3px rgba(0, 0, 0, 0.25);
+}
+
+#header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+
+}
+
+#link-logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -85px;
+    margin-top: -15px;
+}
+
+.logo {
+    width: 170px;
+    height: 34px;
+    object-fit: contain;
+}
+
+#menu {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+#menu li {
+    padding: 10px 40px;
+}
+
+#menu li:first-child {
+    padding-left: 0;
+}
+
+#menu a {
+    font-family: Futura, serif;
+    color: black;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    font-family: Futura, serif;
+    color: #f2b8bb;
+    text-decoration: none;
+}
+
+#btn-try {
+    background-color: #f3858f;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-top: -10px;
+    border: 0;
+    font-weight: bold;
+    color: white;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+.spacer-300{
+    width: 100%;
+    height: 300px;
+    background: #f2b8bb;
+}
+
+#home {
+}
+
+#home-wrapper {
+    height: 100%;
+    position: relative;
+    background: url(../images/background-2.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+#pohon-kiri {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    animation-name: pohon-kiri;
+    animation-duration: 1s;
+}
+
+#pohon-kanan {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    animation-name: pohon-kanan;
+    animation-duration: 1s;
+}
+
+#produk-dan-tangan {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 50%;
+    top: 365px;
+    margin-left: -50%;
+    animation-name: produk-dan-tangan;
+    animation-duration: 1s;
+}
+
+#home-content-wrapper {
+    width: 50%;
+    margin-top: 100px;
+    position: relative;
+    z-index: 5;
+    text-align: center;
+}
+
+#home-content-title {
+    font-size: 80px;
+    color: white;
+    font-family: Newton W01 Extra Bold;
+    margin: 20px;
+}
+
+#home-content-detail {
+    font-size: 30px;
+    background-color: #f2b8bb;
+    margin: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 30px;
+    padding: 15px;
+    padding-left: 10px;
+    font-family: Futura Md BT, serif;
+    color: white;
+
+}
+
+#home-content-description {
+    width: 80%;
+    margin: 20px auto;
+    font-size: 15px;
+}
+
+@keyframes pohon-kiri {
+    from {
+        left: -100%
+    }
+
+    to {
+        left: 0
+    }
+}
+
+@keyframes pohon-kanan {
+    from {
+        right: -100%
+    }
+
+    to {
+        right: 0
+    }
+}
+
+@keyframes produk-dan-tangan {
+    from {
+        bottom: -100%
+    }
+
+    to {
+        bottom: 0
+    }
+}
+
+#ingredients {
+    background: #f2b8bb;
+}
+
+#ingredients-image-background {
+    position: absolute;
+    width: 100%;
+    top: 915px;
+}
+
+#ingredients-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#pohon-bunga {
+    position: absolute;
+    left: 0;
+    top: 742px;
+    height: 1003px;
+    width: 1440px;
+}
+
+#kelopak-bunga {
+    width: 500px;
+    position: absolute;
+    bottom: -217px;
+    left: -160px;
+}
+
+#ingredients-content-wrapper {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-top: 77px;
+    margin-left: -30px;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 5;
+}
+
+#ingredients-content-title-wrapper {
+    align-self: flex-start;
+    padding: 30px;
+    margin-top: -22px;
+    position: relative;
+}
+
+#ingredents-content-title {
+    font-size: 70px;
+    text-align: right;
+    color: white;
+    font-family: Newton W01 Extra Bold, serif;
+    margin: 0;
+}
+
+#ingredients-slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: 350px;
+    padding: 20px;
+    background: white;
+    border-radius: 23px;
+}
+#ingredients-slider-item-wrapper{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 30px);
+}
+#ingredients-content-description-title{
+    font-size: 31px;
+    text-align: left;
+    color: black;
+    padding-top: 15px;
+    padding-left: 20px;
+    font-family: futura md bt;
+    margin: 0;
+}
+#ingredents-content-description{
+    font-size: 17px;
+    text-align: left;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "Futura bk bt";
+}
+#ingredients-slider-indicator-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.ingredients-slider-indicator{
+    width: 10px;
+    height: 10px;
+    background: white;
+    border: 2px solid #f3858f;
+    border-radius: 10px;
+}
+
+.ingredients-slider-indicator:not(:last-child) {
+    margin-right: 7px;
+}
+
+.ingredients-slider-indicator.active{
+    background: #f3858f;
+}
+
+.slider-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+
+.slider-item.active {
+    opacity: 1;
+}
+
+#video-ingredients {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#Product-details{
+    background: rgb(242,184,187);
+    background: linear-gradient(180deg, rgba(242,184,187,1) 55%, rgba(243,156,163,1) 88%, rgba(243,133,143,1) 100%);
+    height: 440px;
+}
+#Product-details-wrapper{
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+#product-dan-bunga {
+    position: absolute;
+    right: 74px;
+    top: 38px;
+    bottom: 0;
+    height: 750px;
+}
+#product-details-content-wrapper{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-top: 77px;
+    margin-left: -89px;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 10;
+}
+#product-details-content-title-wrapper{
+    align-self: flex-start;
+    padding: 20px;
+    margin-top: 240px;
+    position: relative;
+}
+#product-details-content-title {
+    font-size: 70px;
+    text-align: left;
+    color: white;
+    padding-right: 525px;
+    font-family: Newton W01 Extra Bold, serif;
+    margin: 0;
+}
+#product-details-slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 48%;
+    height: 204px;
+    margin-top: 30px;
+    padding: 0px;
+    border-radius: 23px;
+}
+
+#Product-details-slider-item-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#icon-details1 {
+    width: 35%;
+    padding: 5px;
+    margin-top: 33px;
+    margin-left: -10px;
+}
+
+#product-details-content-description {
+    position: absolute;
+    color: black;
+    font-size: 19px;
+    line-height: 26px;
+    width: 60%;
+    top: 0;
+    left: 195px;
+}
+#product-details-content-description2{
+    position: absolute;
+    color: black;
+    font-size: 18px;
+    line-height: 25px;
+    width: 30%;
+    top: 131px;
+    left: 186px;
+}
+#product-details-slider-indicator-wrapper{
+    display: flex;
+    width: 48%;
+    justify-content: left;
+    margin-top: 20px;
+    margin-left: 183px;
+}
+
+.product-slider-indicator{
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    background: white;
+    border: 2px solid #f3858f;
+    border-radius: 10px;
+}
+.product-details-slider-indicator:not(:last-child) {
+    margin-right: 7px;
+}
+.product-details-slider-indicator.active {
+    background: #f3858f;
+}
+.product-slider-item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+.product-slider-item.active{
+    opacity: 1;
+}
+#how-to-use{
+    background-color: white ;
+    margin-top: 300px;
+}
+#how-to-use-wrapper{
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+#bunga-depan-kiri {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    height: 380px;
+    width: 545px;
+    z-index: 20;
+}
+
+#bunga-depan-kanan {
+    position: absolute;
+    right: 0;
+    top: 544px;
+    height: 400px;
+    width: 600px;
+    z-index: 20;
+}
+#how-to-use-content-wrapper {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-top: -95px;
+    margin-left: -30px;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 5;
+}
+
+#how-to-use-content-title-wrapper {
+    align-self: flex-start;
+    padding: 20px;
+    margin-top: 230px;
+    width: 900px;
+    left: -7%;
+    margin-left: 0;
+    position: relative;
+}
+#how-to-use-content-title {
+    font-size: 70px;
+    text-align: center;
+    color: black;
+    padding-right: 0;
+    font-family: Newton W01 Extra Bold, serif;
+    margin: 0;
+    margin-bottom: 13px;
+}
+#how-to-use-details-slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+    height: 488px;
+    margin-top: 30px;
+    padding: 0px;
+    border-radius: 23px;
+}
+#how-to-use-slider-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+    height: 488px;
+    margin-top: 30px;
+    background-color: #bddeff;
+    padding: 9px;
+    border: 10px solid white;
+    outline: solid #bddeff;
+    margin: 0;
+}
+.how-to-use-item active{
+    opacity: 1;
+}
+#tutorial-how-to-use-1 {
+    position: absolute;
+    top: 175px;
+    height: 270px;
+    width: 270px;
+    left: 50%;
+    margin-left: -135px;
+}
+#how-to-use-detail {
+    position: absolute;
+    top: 555px;
+    font-size: 30px;
+    color: white;
+    font-family: Futura Md BT;
+    letter-spacing: 1.5px;
+    margin: 10px;
+    text-align: center;
+    margin-top: -100px;
+    width: 400px;
+    left: 50%;
+    margin-left: -200px;
+}
+#how-to-use-content-description {
+    position: absolute;
+    top: 605px;
+    font-size: 17px;
+    color: black;
+    font-family: Futura bk BT;
+    letter-spacing: 1px;
+    margin: 10px;
+    text-align: center;
+    margin-top: -100px;
+    width: 470px;
+    left: 50%;
+    margin-left: -235px;
+}
+.how-to-use-slider-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+#how-to-use-details-slider-indicator-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: -500px;
+}
+#arrow-kiri-how-to-use {
+    width: 6%;
+    height: 6%;
+    margin-top: 170px;
+    margin-left: 0;
+    z-index: 30;
+}
+
+#arrow-kanan-how-to-use {
+    width: 6%;
+    height: 6%;
+    padding-left: 350px;
+    margin-top: 170px;
+    margin-left: 0;
+    z-index: 30;
+}
+#texture {
+    background: rgb(189, 222, 255);
+    background: linear-gradient(0deg, rgba(189, 222, 255, 1) 50%, rgba(255, 255, 255, 1) 50%);
+    margin-top: 78px;
+}
+#texture-wrapper{
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+#texture-jpg {
+    position: absolute;
+    left: 0px;
+    top: 60px;
+    height: 620px;
+    width: 680px;
+    margin-left: 100px;
+}
+#texture-content-wrapper{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-top: 77px;
+    margin-left: -89px;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 10;
+}
+#texture-title {
+    position: absolute;
+    top: 180px;
+    font-size: 70px;
+    text-align: left;
+    color: black;
+    font-family: Newton W01 Extra Bold;
+    margin-top: 10px;
+    margin-right: 247px;
+}
+
+#texture-description {
+    width: 38%;
+    margin: 20px;
+    font-size: 23px;
+    position: absolute;
+    top: 300px;
+    margin-right: -20px;
+}
+#awards{
+    background: rgb(189,222,255);
+    background: linear-gradient(180deg, rgba(189,222,255,1) 50%, rgba(255,255,255,1) 50%);
+}
+#awards-content-title-wrapper {
+    align-self: flex-start;
+    padding: 20px;
+    position: relative;
+    top: 100px;
+    justify-content: center;
+}
+
+#shining-kiri {
+    position: absolute;
+    top: 102px;
+    height: 85px;
+    width: 95px;
+    left: 50%;
+    margin-left: -275px;
+}
+#shining-kanan {
+    position: absolute;
+    top: 10px;
+    height: 80px;
+    width: 75px;
+    left: 50%;
+    margin-left: 168px;
+}
+hr {
+    border: 1px solid white;
+}
+#awards-content-title-details {
+    font-size: 98px;
+    text-align: center;
+    color: white;
+    padding-right: 0;
+    font-family: Newton W01 Extra Bold, serif;
+    margin: 0;
+}
+
+#awards-content-title-description {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    font-family: futura bk bt;
+    margin: 0;
+}
+
+#icon-awards-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 197px;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+#icon-awards1 {
+    display: inline;
+    align-self: flex-start;
+    position: relative;
+    height: 110px;
+    width: 110px;
+}
+
+#icon-awards2 {
+    position: sticky;
+    align-self: flex-end;
+    height: 110px;
+    width: 110px;
+    padding-left: 150px;
+}
+
+#icon-awards3 {
+    position: sticky;
+    align-self: flex-end;
+    height: 110px;
+    width: 110px;
+    padding-left: 150px;
+}
+
+#icon-awards4 {
+    position: relative;
+    align-self: flex-end;
+    height: 110px;
+    width: 110px;
+    padding-left: 150px;
+}
+
+#icon-awards5 {
+    position: sticky;
+    height: 110px;
+    width: 110px;
+    padding-left: 150px;
+}
+
+#awards-content-description-title-wrapper{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-left: 140px;
+    margin-right: 100px;
+    justify-content: left;
+    position: relative;
+    z-index: 10;
+}
+#awards-content-description-title1 {
+    position: relative;
+    display: inline;
+    align-content: flex-start;
+    width: 11%;
+    text-align: center;
+    font-family: Futura Md BT;
+
+}
+
+#awards-content-description-title2 {
+    position: relative;
+    display: inline;
+    align-content: flex-start;
+    width: 11%;
+    text-align: center;
+    padding-left: 125px;
+    font-family: Futura Md BT;
+    margin-bottom: 0;
+}
+
+#awards-content-description-title3 {
+    position: relative;
+    display: inline;
+    align-content: flex-start;
+    width: 11%;
+    text-align: center;
+    padding-left: 125px;
+    font-family: Futura Md BT;
+}
+
+#awards-content-description-title4 {
+    position: relative;
+    display: inline;
+    align-content: flex-start;
+    width: 11%;
+    text-align: center;
+    padding-left: 130px;
+    font-family: Futura Md BT;
+    margin-bottom: 0;
+}
+
+#awards-content-description-title5 {
+    position: relative;
+    display: inline;
+    align-content: flex-start;
+    width: 11%;
+    text-align: center;
+    padding-left: 130px;
+    font-family: Futura Md BT;
+    margin-bottom: 0;
+}
+#awards-content-description-wrapper{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-left: 140px;
+    margin-right: 100px;
+    justify-content: left;
+    position: relative;
+    z-index: 10;
+}
+#awards-content-description1 {
+    position: relative;
+    display: inline;
+    align-content: flex-start;
+    height: 100px;
+    width: 11%;
+    text-align: center;
+    font-size: 13px;
+    font-family: Futura bk BT;
+    margin-top: -25px;
+}
+
+#awards-content-description2 {
+    position: relative;
+    display: inline;
+    align-content: flex-start;
+    height: 100px;
+    width: 11%;
+    text-align: center;
+    font-size: 13px;
+    font-family: Futura bk BT;
+    padding-left: 125px;
+}
+
+#awards-content-description3 {
+    position: relative;
+    display: inline;
+    align-content: flex-start;
+    height: 100px;
+    width: 11%;
+    text-align: center;
+    font-size: 13px;
+    font-family: Futura bk BT;
+    margin-top: -25px;
+    padding-left: 125px;
+}
+
+#awards-content-description4 {
+    position: relative;
+    display: inline;
+    align-content: flex-start;
+    height: 100px;
+    width: 11%;
+    text-align: center;
+    font-size: 13px;
+    font-family: Futura bk BT;
+    margin-top: -5px;
+    padding-left: 130px;
+}
+
+#awards-content-description5 {
+    position: relative;
+    display: inline;
+    align-content: flex-start;
+    height: 100px;
+    width: 11%;
+    text-align: center;
+    font-size: 13px;
+    font-family: Futura bk BT;
+    margin-top: -5px;
+    padding-left: 130px;
+}
+
+#reviews {
+    background-color: white;
+    margin-top: 0px;
+}
+#container {
+    background-color: #f4d4d6;
+    width: 1300px;
+    left: 50%;
+    margin-left: -650px;
+    height: 535px;
+    top: 5209px;
+    position: absolute;
+    background-size: 100%;
+}
+#reviews-wrapper {
+    height: 665px;
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+#reviews-content-wrapper {
+    width: 82.5%;
+    display: flex;
+    align-items: center;
+    margin-top: 44px;
+    margin-left: 0px;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 5;
+}
+#reviews-content-title-wrapper {
+    align-self: flex-start;
+    padding: 0;
+    margin-top: 0;
+    width: 1000px;
+    left: 3%;
+    margin-left: 0;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#reviews-title {
+    font-size: 70px;
+    text-align: center;
+    width: 1020px;
+    color: black;
+    padding-right: 0;
+    font-family: Newton W01 Extra Bold, serif;
+    margin: 0;
+    margin-bottom: 13px;
+}
+#reviews-slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 530px;
+    margin-top: 0px;
+    padding: 0px;
+    border-radius: 23px;
+}
+#reviews-slider-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 530px;
+    margin-top: 30px;
+    background-color: white;
+    padding: 0px;
+    border: 3px solid #f2b8bb;
+    margin: 0;
+}
+.reviews-item active {
+    opacity: 1;
+}
+#reviews-profile-wrapper1 {
+    align-self: flex-start;
+    padding: 0px;
+    margin-top: -200px;
+    height: 158px;
+    width: 1002px;
+    left: 0;
+    margin-left: 0;
+    position: relative;
+}
+
+#foto-review1 {
+    position: absolute;
+    top: 0;
+    height: 150px;
+    width: 150px;
+    left: 50%;
+    margin-left: -75px;
+    justify-content: center;
+}
+#reviews-profile-name1 {
+    top: 135px;
+    height: 100px;
+    width: 1000px;
+    left: 50%;
+    margin-left: -500px;
+    font-size: 25px;
+    font-family: Futura Md BT;
+    text-align: center;
+    position: absolute;
+
+}
+#reviews-profile-description1 {
+    top: 191px;
+    height: 100px;
+    width: 100%;
+    left: 50%;
+    margin-left: -50%;
+    font-size: 14px;
+    font-family: Futura bk BT;
+    text-align: center;
+    line-height: 23px;
+    position: absolute;
+ }
+#reviews-comment-wrapper1 {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 120px;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: left;
+    position: relative;
+    z-index: 10;
+ }
+#leaf-review5 {
+    position: absolute;
+    top: 25px;
+    height: 40px;
+    width: 160px;
+    right: 0%;
+    margin-right: 0px;
+    justify-content: right;
+}
+#reviews-content-date1 {
+    top: 0;
+    height: 21px;
+    width: 200px;
+    left: 0%;
+    margin-left: 0px;
+    font-size: 13px;
+    font-family: Futura bk BT;
+    text-align: left;
+    position: absolute;
+}
+#reviews-content-description1 {
+    top: 28px;
+    height: 100px;
+    width: 812px;
+    left: 0;
+    margin-left: 0;
+    font-size: 18.3px;
+    font-family: Futura bk BT;
+    justify-content: left;
+    position: absolute;
+}
+
+#reviews-recommendation1 {
+    top: 535px;
+    height: 100px;
+    width: 800px;
+    left: 50%;
+    margin-left: -400px;
+    font-size: 25px;
+    font-family: Futura bk BT;
+    text-align: center;
+    color: #f3858f;
+    position: absolute;
+}
+.reviews-slider-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+#reviews-slider-indicator-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+#review-arrow-kiri {
+    width: 6%;
+    height: 6%;
+    margin-top: 0px;
+    margin-left: 0;
+    z-index: 0;
+}
+
+#review-arrow-kanan {
+    width: 6%;
+    height: 6%;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-left: 0;
+    z-index: 0;
+}
+#try-it-now{
+    background-color: white;
+}
+#try-it-now-wrapper{
+    height: 665px;
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+#bunga-tryitnow {
+    position: absolute;
+    top: 65px;
+    height: 450px;
+    width: 1200px;
+    left: 50%;
+    margin-left: -600px;
+}
+#product-tryitnow {
+    position: absolute;
+    top: 0px;
+    height: 550px;
+    width: 550px;
+    left: 50%;
+    margin-left: -275px;
+}
+#tryitnow-content-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 465px;
+    margin-left: 0px;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 0;
+}
+#tryitnow-content-title {
+    position: absolute;
+    top: 0;
+    font-size: 60px;
+    color: #f3858f;
+    font-family: Newton W01 Extra Bold;
+    margin: 20px;
+    width: 600px;
+    left: 50%;
+    margin-left: -300px;
+    text-align: center;
+}
+
+#tryitnow-content-detail {
+    position: absolute;
+    top: 78px;
+    margin: 20px auto;
+    font-size: 33px;
+    width: 600px;
+    left: 50%;
+    margin-left: -300px;
+    text-align: center;
+}
+
+#tryitnow-content-description {
+    position: absolute;
+    top: 148px;
+    left: 50%;
+    font-size: 30px;
+    background-color: #bddeff;
+    margin: 10px;
+    margin-left: -185px;
+    margin-right: 40px;
+    border-radius: 30px;
+    padding: 15px;
+    padding-left: 10px;
+    font-family: Futura Md BT;
+    color: white;
+    width: 370px;
+    justify-content: center;
+    text-align: center;
+}
+
+#contact {
+    background: rgb(242, 185, 187);
+    background: linear-gradient(0deg, rgba(242, 185, 187, 1) 50%, rgba(255, 255, 255, 1) 50%);
+    margin-top: 40px;
+}
+#contact-wrapper {
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+#bunga-background-contact {
+    position: absolute;
+    top: 0px;
+    height: 365px;
+    width: 1280px;
+    left: 50%;
+    margin-left: -640px;
+    background-color: #c0dcf3;
+}
+
+#logo-innisfree-contact {
+    position: absolute;
+    top: 125px;
+    height: 100px;
+    width: 550px;
+    left: 50%;
+    margin-left: -275px;
+}
+#contact-content-wrapper{
+    width: 100%;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    margin-top: 456px;
+    margin-left: 0px;
+    justify-content: flex-end;
+    position: absolute;
+    z-index: 40;
+}
+#contact-content-title-wrapper{
+    align-self: flex-start;
+    padding: 20px;
+    position: relative;
+    width: 1240px;
+    left: -80px;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+}
+#contact-content-title {
+    position: absolute;
+    top: 0px;
+    font-size: 35px;
+    color: white;
+    font-family: Futura Md BT;
+    margin-top: 0;
+    margin-bottom: 25px;
+    width: 600px;
+    left: 50%;
+    margin-left: -300px;
+    text-align: center;
+}
+#tryitnow-icon-wrapper{
+    display: flex;
+    align-items: center;
+    width: 1240px;
+    margin-top: 55px;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+}
+#icon-facebook {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 45px;
+    width: 30px;
+    left: 50%;
+    margin-left: -225px;
+}
+
+#icon-instagram {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 45px;
+    width: 45px;
+    left: 50%;
+    margin-left: -133px;
+}
+
+#icon-youtube {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 45px;
+    width: 65px;
+    left: 50%;
+    margin-left: -28px;
+}
+
+#icon-line {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 45px;
+    width: 130px;
+    left: 50%;
+    margin-left: 103px;
+}
+#contact-content-details-wrapper {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 155px;
+    width: 1240px;
+    left: 50%;
+    margin-left: -620px;
+    padding: 0;
+    position: absolute;
+}
+#contact-content-details1 {
+    osition: absolute;
+    top: 0px;
+    font-size: 16px;
+    color: white;
+    font-family: Futura Md BT;
+    margin: 10px;
+    width: 500px;
+    left: 0;
+    margin-left: 0;
+    text-align: left;
+}
+
+#contact-content-details2 {
+    position: absolute;
+    top: 0px;
+    font-size: 16px;
+    color: white;
+    font-family: Futura Md BT;
+    margin: 10px;
+    width: 500px;
+    left: 0;
+    padding-left: 135px;
+    text-align: left;
+}
+
+#contact-content-details3 {
+    position: absolute;
+    top: 0px;
+    font-size: 16px;
+    color: white;
+    font-family: Futura Md BT;
+    margin: 10px;
+    width: 500px;
+    left: 0;
+    margin-left: 290px;
+    text-align: left;
+}
+
+#contact-content-details4 {
+    position: absolute;
+    top: 0px;
+    font-size: 16px;
+    color: white;
+    font-family: Futura Md BT;
+    margin: 10px;
+    width: 500px;
+    right: 0;
+    margin-right: 0;
+    text-align: right;
+}
+@media only screen and (max-width:900px){
+    .home, .ingredients, #Product-details, #Product-details, #how-to-use, #texture, #awards, #reviews, #try-it-now, #contact {
+        width: 100%;
+        padding: 0;
+    }
+@media only screen and (max-width:500px) {
+}}
+
+

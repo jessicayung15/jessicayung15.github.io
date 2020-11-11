@@ -163,16 +163,6 @@ section {
     font-size: 15px;
 }
 
-#home-ingredients-gap{
-    font-size: 35px;
-    color: #f3858f;
-    font-family: "Futura Md BT", serif;
-    padding: 20px;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-}
-
 @keyframes pohon-kiri {
     from {
         left: -100%
@@ -210,20 +200,13 @@ section {
 #ingredients-image-background {
     position: absolute;
     width: 100%;
+    top: 915px;
 }
 
 #ingredients-wrapper {
     height: 100%;
     display: flex;
     align-items: center;
-}
-
-#ingredients-background {
-    position: absolute;
-    left: 0;
-    top: 710px;
-    height: 1470px;
-    width: 1440px;
 }
 
 #pohon-bunga {
@@ -235,16 +218,18 @@ section {
 }
 
 #kelopak-bunga {
-    width: 400px;
+    width: 450px;
     position: absolute;
-    bottom: -200px;
-    left: -130px;
+    bottom: -190px;
+    left: -120px;
 }
 
 #ingredients-content-wrapper {
     width: 90%;
     display: flex;
     align-items: center;
+    margin-top: 77px;
+    margin-left: -30px;
     justify-content: flex-end;
     position: relative;
     z-index: 5;
@@ -253,6 +238,7 @@ section {
 #ingredients-content-title-wrapper {
     align-self: flex-start;
     padding: 30px;
+    margin-top: -22px;
     position: relative;
 }
 
