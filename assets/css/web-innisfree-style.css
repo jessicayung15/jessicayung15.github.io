@@ -523,6 +523,14 @@ how-to-use-content-wrapper {
     justify-content: center;
 }
 
+#awards-item-wrapper {
+    display: flex;
+}
+
+.awards-item {
+    text-align: center;
+}
+
 #awards-line {
     position: absolute;
     left: 0px;
